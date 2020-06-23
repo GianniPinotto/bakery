@@ -28,6 +28,11 @@ header {
     height: 400px;
     padding: 20px;
     text-align: center;
+    
+}
+
+header .mobile {
+    display: none;
 }
 
 header a {
@@ -53,6 +58,21 @@ header .logo a {
 
 }
 
+header .signature a {
+    /*background: red;*/
+    background-image: url("images/firma_transp3.png");
+    
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+    text-indent: -9999999px;
+    position: relative;
+    top: -170px;
+    left: -50px;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -67,6 +87,68 @@ nav li {
     display: inline-block;
     /*margin: 0 20px 0 0;*/
 }
+
+/* RESPONSIVE RULES   */
+@media screen and (max-width: 760px ) {
+
+    header {
+        height: 200;
+    }
+
+
+    header .signature a {
+        /*background: red;*/
+        
+        /*
+        background-image: url("images/firma_transp3.png");
+        
+        
+        
+        */
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        height: 300px;
+        width: 300px;
+        /*
+        display: inline-block;
+        text-indent: -9999999px;
+        position: relative;
+        top: -170px;
+        left: -50px;
+        */
+    }
+
+
+    header .mobile {
+
+        display: inline-block;
+
+    }
+
+    header .logo a {
+      
+        top: -30px;
+    
+    }
+
+    header .desktop { 
+
+        display: none;
+    }
+}
+/*
+@media screen and (min-width: 760px) {
+
+    header .mobile {
+        display: none;
+    }
+
+    header .desktop {
+        display: inline-block;
+    }
+}
+*/
+
 
 section3 {
     
@@ -133,7 +215,12 @@ section.feature figure figcaption {
 
 }
 
-/* larger screen width */
+/* 
+with Desktop start from big screen using max-width
+with Mobile start from smallscreen using min-width
+*/
+
+/* Desktop larger screen width */
 @media screen and (max-width: 2000px) {
     .feature {
         background: white;
@@ -142,23 +229,24 @@ section.feature figure figcaption {
 }
 @media screen and (max-width: 1000px) {
     .feature {
-        background: pink;
+        /*background: pink;*/
+        background: white;
         
     }
 }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
     .feature {
-        background: green;
-        
+       /* background: green;*/
+       background: white;   
     }
 }
 
 /* smaller screen width */
 @media screen and (max-width: 600px) {
     .feature {
-        background: red;
-        
+        /*background: red;*/
+        background: white;  
     }
 
 }
@@ -211,6 +299,7 @@ footer {
     text-align: center;
     padding: 20px 20px;
 }    
+
 div {
     background: pink;
     display: inline;
@@ -223,8 +312,8 @@ li:first-child {
     margin-left: 0;
 }
 
-li:hover  {
-    background-color: blue;
+li:hover  { 
+    background-color: yellow;
 }
 
 a  {
@@ -234,28 +323,3 @@ a  {
 a:hover  {
     text-decoration: underline;
 }
-/* RESPONSIVE RULES */
-
-
-
-/*
-@media screen and (max-width: 715px) {
-    header {
-      height: 250px;
-      background-position: 0 -30px;
-    }
-    header .mobile {
-      display: inline-block;
-    }
-    header .desktop {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 500px) {
-    header {
-      height: 200px;
-      background-position: 0 -0px;
-    }
-  }
-  */
